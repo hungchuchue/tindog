@@ -8,7 +8,7 @@
 }
 
 
-(min-width: 768px) {
+@media(min-width: 768px) {
     .flex-md-row {
         flex-direction: row !important;
     }
@@ -29,4 +29,18 @@
 
 .d-block {
     display: block !important;
+
 }
+.cal-days, {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+}
+
+ /* .cal-btn {
+    display: flex;
+    flex-shrink: 0; 
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    padding: 0; } */
