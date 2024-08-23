@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost',sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+@media (min-width: 768px) {
+    .md\:hdt-custom-col-4{
+        width: 33,33%;
+    }
+    
+}
+
+.logo img{
+    max-width: 120px;
+    height: auto;
+
+}
+
+.navmenu{
+    display: flex;
+
+}
+.navmenu a{
+    color: #2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+
+}
+/* làm đổi màu và chỉnh kíchh thước  */
+
+.navmenu a :hover{
+    color: #ee1c47;
+
+}
+
+.hdt-site-top_nav :hover{
+    color: #ee1c47;}
+/* thẻ hover có tác dụng lfm chuyển màu của chữ ghi mình click vào */
+    
+    
+@media (min-width: 1150px) {
+  .hdt-site-top_nav {
+            gap: 19px;
+}
+}
+
+.hdt-align-center {
+            align-items: center;
+}
+.hdt-justify-end {
+    justify-content: end;
+}
+
+.hdt-flex {
+    display: flex;
+}
+.hdt-inline-flex {
+    display: inline-flex;
+    color: #2c2c2c;
+    /* chữ và icon màu đenn  */
+}   
+
+.hdt-relative{
+    position: relative;
+}
+
+
+.hdt-site-top_nav .hdt-site-nav_icon a .hdt-count-box {
+    line-height: 18px;
+    height: 18px;
+    min-width: 18px;
+    text-align: center;
+    padding-left: 3px;
+    padding-top: 0px;
+    padding-bottom: 0;
+    padding-right: 3px;
+    font-size: 10px;
+    font-weight: 500;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    white-space: nowrap;
+    white-space-collapse: collapse;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: absolute;
+    z-index: 2;
+    top: -8px;
+    right: -10px;
+    color: var(--color-light,#ffffff);
+    background-color: red;
+    
+}
+/* làm chuyển đổi màu của trên cùng icon và thêm hình tron và dấu 0 vào trên icon bên phải */
+
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+}
+
+
+.carousel-cell > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* .main-text h1{
+    color: #000;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px ;
+} */
+
+.main-text {
+    position: relative;
+}
+
+
+.main-text > h1 {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 450;
+    margin: 6px 0 10px ;
+
+}
+.main-text > p{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    font-size: 25px;
+}
+/* gọi ở trong hàm main-text dấu > là chỉ đến p hiểu rằng p là con của main  */
+
+.main-text > a{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    display: inline-block;
+    color: #111;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform:  capitalize;
+    border: 2px solid #111;
+    padding: 12px 25px;
+    transition: all .42s ease;
+   background-color: #111;
+   color: #ffffff;
+}
+
+.mySwiper::part(pagination) {
+    position: absolute;
+    width: 30% !important;
+}
+ /* chỉnh dấu 3 chấm chuyển đổi dịch sang bên trái  */
