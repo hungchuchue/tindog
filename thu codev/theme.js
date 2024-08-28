@@ -32,3 +32,4 @@
     Object.assign(swiperEl, params)
 
     swiperEl.initialize();
+ 

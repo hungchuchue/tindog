@@ -1,0 +1,70 @@
+/* Circle Pick Size */
+.circle-label {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    text-align: center;
+}
+.circle-container
+{
+    display: flex;
+ /* Sắp xếp các phần tử con thành hàng ngang */
+    justify-content: center;
+   /* Căn giữa các phần tử theo chiều ngang */
+
+    align-items: center;
+    /* Căn giữa các phần tử theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa các vòng tròn */
+}
+.circle-input:checked + .circle-label {
+    border-color: var(--black);
+    
+}
+
+.inner-circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: width 0.2s, height 0.2s;
+}
+
+.circle-input:checked + .circle-label .inner-circle {
+    width: 13px;
+    height: 13px;
+}
+
+.lightgreen {
+    background-color: lightgreen;
+}
+
+.lightcoral {
+    background-color: lightcoral;
+}
+
+.gray {
+    background-color: gray;
+}
+.black{
+ background-color: black;
+}
+.yellow{
+
+background-color: yellow;
+}
+
+input{
+    opacity: 0;
+    visibility: hidden;
+}
+.plus-two {
+    font-size: 13px;
+    color: var(--black);
+    margin-left: 10px;
+}
